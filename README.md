@@ -1,5 +1,7 @@
 ## Tehnici Web
 
+Un dezvoltator web are nevoie sa inteleaga in profunzime multe concepte din diverse subdomenii ale industriei IT, precum operare pe calculator, administrare servere web/Linux/Windows, retelistica si, nu in ultimul rand, limbaje de programare necesare pentru dezvoltarea aplicatiilor (HTML, CSS, Javascript, Java, PHP, Nodejs, Python etc.)
+
 Aici va ofer un exemplu de ce trebuie urmarit ca [frontend developer](https://frontendchecklist.io/) si [backend developer](https://www.freecodecamp.org/news/have-an-idea-want-to-build-a-product-from-scratch-heres-a-checklist-of-things-you-should-go-through-in-your-backend-software-architecture) in dezvoltarea unei aplicatii web.
 
 ### Informatii privind laboratorul
