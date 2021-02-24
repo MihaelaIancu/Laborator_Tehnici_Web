@@ -1,4 +1,8 @@
-## Informatii privind laboratorul
+## Tehnici Web
+
+Aici va ofer un exemplu de ce trebuie urmarit ca [frontend developer](https://frontendchecklist.io/) si [backend developer](https://www.freecodecamp.org/news/have-an-idea-want-to-build-a-product-from-scratch-heres-a-checklist-of-things-you-should-go-through-in-your-backend-software-architecture) in dezvoltarea unei aplicatii web.
+
+### Informatii privind laboratorul
 
 Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte: 10 puncte activitate laborator si 30 puncte proiect (cerintele le gasiti mai jos). Punctajul minim de intrare in examen este 20 puncte.
 
