@@ -20,7 +20,7 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 
 #### Activitate laborator (10 puncte)
 
-* minim 10 prezente la laborator (prezenta totala = 2 puncte)
+* minim 8 prezente la laborator (prezenta totala = 2 puncte)
 * rezolvarea tuturor exercitiilor (fara proiecte) de pe [Free Code Camp](https://www.freecodecamp.org/learn), astfel:
   * Responsive Web Design Certification (4 puncte - deadline: saptamana 7)
   * JavaScript Algorithms and Data Structures Certification (4 puncte - deadline: saptamana 14)
