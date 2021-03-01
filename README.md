@@ -36,16 +36,17 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 ###### Cerinte pentru partea de HTML si CSS (10 puncte):
 
 * fisiere separate pentru HTML si CSS
-* HTML: proiectul sa foloseasca tagurile semantice prezentate la curs/laborator
+* HTML: proiectul sa foloseasca tagurile semantice prezentate la curs/laborator - minim 4 taguri semantice
 * sa treaca testul de validare HTML (http://validator.w3.org/ ) si testul de validare CSS (https://jigsaw.w3.org/css-validator/)
 * site-ul sa fie [responsive](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/) (media query, unitati relative, tipuri de display)
 * selectori CSS de baza (dupa id, clasa, tag, elementContinut, elementCopil, al n-lea copil de tipul unui tag (:nth-of-type))
 * proprietati: width, height, color, background, font-size, border, padding, margin, display
-* layout-ul sa contina coloane (pe minim o pagina) si fie realizat fara tabele (folosind flex si grid)
+* layout-ul sa contina coloane (minim in 2 coloane) si fie realizat fara tabele (cu Flexbox si/sau CSS grid)
 * sa contina un menu drop-down realizat cu CSS
-* continut generat (:after, :before)
-* tranzitie care implica schimbarea mai multor proprietati la intervale diferite de timp
-* animatie care sa modifice mai multe proprietati ale aceluiasi element
+* Site-ul sa fie responsive, respectand rezolutiile urmatoarelor dispozitive folosind media queries:
+  * telefon mobil - latime mai mica 768px
+  * tableta - latime intre 768px si 1280px
+  * desktop - latime mai mare de 1280px
 * continutul siteului sa aiba sens
 
 ###### Cerinte pentru partea de JavaScript (12 puncte):
@@ -61,8 +62,6 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 * folosirea localStorage (sa se pastreze in localStorage o colectie de elemente)
 * folosirea a cel putin unei metode din clasele: Math, Array, String, Date
 * schimbarea aleatoare a valorilor unor proprietati (de exemplu: culoare, dimensiuni, pozitii)
-* folosirea proprietatilor classList, target, currentTarget
-* folosirea metodelor getComputedStyle si stopPropagation cu un sens relevant
 * validarea datelor dintr-un formular folosind expresii regulate
 * elementele de JavaScript sa fie integrate cu sens in cadrul proiectului 
 
