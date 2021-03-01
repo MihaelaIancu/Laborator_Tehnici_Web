@@ -38,15 +38,14 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 * fisiere separate pentru HTML si CSS
 * HTML: proiectul sa foloseasca tagurile semantice prezentate la curs/laborator - minim 4 taguri semantice
 * sa treaca testul de validare HTML (http://validator.w3.org/ ) si testul de validare CSS (https://jigsaw.w3.org/css-validator/)
-* site-ul sa fie [responsive](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/) (media query, unitati relative, tipuri de display)
+* site-ul sa fie [responsive](http://css-tricks.com/snippets/css/media-queries-for-standard-devices/) (media query, unitati relative, tipuri de display):
+  * telefon mobil - latime mai mica 768px
+  * tableta - latime intre 768px si 1280px
+  * desktop - latime mai mare de 1280px
 * selectori CSS de baza (dupa id, clasa, tag, elementContinut, elementCopil, al n-lea copil de tipul unui tag (:nth-of-type))
 * proprietati: width, height, color, background, font-size, border, padding, margin, display
 * layout-ul sa contina coloane (minim in 2 coloane) si fie realizat fara tabele (cu Flexbox si/sau CSS grid)
 * sa contina un menu drop-down realizat cu CSS
-* Site-ul sa fie responsive, respectand rezolutiile urmatoarelor dispozitive folosind media queries:
-  * telefon mobil - latime mai mica 768px
-  * tableta - latime intre 768px si 1280px
-  * desktop - latime mai mare de 1280px
 * continutul siteului sa aiba sens
 
 ###### Cerinte pentru partea de JavaScript (12 puncte):
