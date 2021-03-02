@@ -32,33 +32,28 @@
 .menu-item{
     display: inline-block;
     margin-right: 10px;
-    margin-left: 20px;
-    padding: 10px 40px;
+    margin-top: 20px;
 /*    padding: 10px 40px 10px 40px;*/
-    background-color: white;
+    background: white;
     text-decoration: none;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Lato';
     font-size: 14px;
-    color:#999;
-    text-align: justify;
+    outline: none;
+    color: #888;
+    vertical-align: bottom;
     
 }
 
 .menu-item-active{
-    position: relative;
+   position: relative;
     bottom: -1px;
     color: #c0392b;
-    padding: 15px 40px;
+    padding: 15px 40px 15px 40px;
     margin-top: 0;
 }
 
 hr{
     margin-top: 25px;
     border: 1px solid #f1f1f1;
-}
-
-.resume-container{
-    margin-top: -5px;
 }
