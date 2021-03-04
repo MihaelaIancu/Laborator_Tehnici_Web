@@ -12,3 +12,91 @@ h1 {
     border: 5px solid #003049;
 }
 
+#container div {
+    width: 200px;
+    height: 200px;
+}
+
+/* https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox */
+/*flex-direction - main direction in container --> main axis = horizontal; cross axis = vertical */
+
+/*
+
+#container {
+    display: flex;
+    flex-direction: row | row-reverse | column | column-reverse;
+}
+*/
+
+/* justify-content - depends on DIRECTION - how the content is distributed across the MAIN axis*/
+
+/*
+#container {
+    display: flex;
+    justify-content:    flex-start 
+                        flex-end    
+                        center 
+                        space-between - space between elements, but not between elements and container -> 1st element at the beginning of the container, 
+                                        last element at the end of the container and what remains in the middle is centered
+                        space-around - same space around it
+                        space-evenly - same space around elements and container, taken 2 by 2
+}
+*/
+
+/* flex-wrap - elements are going to wrap over the line/column */
+
+/*
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+*/
+
+/* align-items - align items on the CROSS axis */
+
+/*
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;   
+}
+*/
+
+/* align-content - distribute the space around CROSS axis when we have more rows - CONTENT WRAPING */
+/* align-self - same align-content, but with individual elements */
+
+
+/* - meeting in the middle */
+/*
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center; 
+}
+*/
+
+
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+/*    align-items: center*/
+}
+
+/* takes the 3rd element individually */
+div:nth-of-type(3){
+    align-self: flex-end;
+}
+
+/* takes the 5th*/
+div:nth-of-type(5){
+    align-self: flex-end;
+}
+
+
+
