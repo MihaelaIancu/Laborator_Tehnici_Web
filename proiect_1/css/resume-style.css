@@ -1,0 +1,148 @@
+/*resume-style.css*/
+
+/*
+padding: top  right  bottom  left
+SAU
+padding: top/bottom  right/left
+
+margin: top  right  bottom  left
+SAU
+margin: top/bottom  right/left
+*/
+
+/*CSS priorities: INLINE(*tag) CSS > INTERNAL (*html) CSS > EXTERNAL (*link) CSS*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+.title {
+    margin: 0 auto;
+    font-family: 'Lato';
+    font-size: 38px;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.subtitle {
+    color: #999;
+    margin-bottom: 1em !important;
+    font-family: 'Lato';
+    font-size: 1.5em;
+    line-height: 1em;
+    text-align: center;
+}
+
+.menu {
+    width: 990px;
+    margin: 80px auto 0px auto;
+    text-align: center;
+}
+
+.menu-item{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+    padding: 10px 40px 10px 40px;
+/*    SAU padding: 10px 40px''*/
+    background: white;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 14px;
+    outline: none;
+    color: #888;
+    vertical-align: bottom;
+}
+
+.menu-item-active {
+    position: relative;
+    bottom: -1px;
+    color: #c0392b;
+    padding: 15px 40px 15px 40px;
+    margin-top: 0;
+}
+  
+hr{
+    margin: 25px 0px 25px 0px;
+    border: 1px solid #f1f1f1;
+}
+
+.resume-title {
+    font-family: 'Open Sans' !important;
+    font-size: 36px;
+    font-weight: 700;
+    margin: 5px 0;
+/*    margin: 60px 0px 0px 0px;*/
+}
+
+.resume-subtitle {
+    font-family: 'Open Sans' !important;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 15px 0px;
+/*    margin: 25px 0px 0px 0px;*/
+    display: inline-block;
+}
+
+.resume-info {
+    font-family: 'Lato';
+    font-size: 16px;
+/*    margin: 0px 0px 25px 0px;*/
+    color: #555;
+}
+
+.resume-date {
+    display: inline-block;
+    float: right;
+    margin: 0px 30px 0px 0px;
+    background-color: #5bc0de;
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    width: 70px;
+    text-align: center;
+}
+
+.skills-item:first-child{
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    margin: 25px 0px 0px 0px !important;
+}
+
+.skills-item:nth-child(n){
+    font-family: 'Lato';
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+}
+
+.resume-aside {
+/*    margin: 0px 0px 25px 0px;*/
+    padding: 10px;
+    border: 1px solid #f1f1f1;
+/*    SAU lightgrey in loc de #f1f1f1*/
+}
+
+.information {
+    margin: 25px 0px !important;
+    font-family: 'Lato';
+    font-size: 16px;
+}
+
+
+/*--> ia al 3lea element din lista*/
+/*
+.skills-item:nth-child(3){
+    font-family: 'Lato';
+    color: blue;
+    font-size: 12px;
+    font-weight: 700;
+    margin: 15px 0px 0px 0px;
+}
+*/
