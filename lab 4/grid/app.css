@@ -17,6 +17,30 @@ h1 {
   grid-template-columns: auto auto auto;
   background-color: #003049;
   padding: 10px;
+  grid-template-columns: 100px auto auto 100px;
+  grid-row-gap: 10px;
+  grid-column-gap: 8px;
+/*    grid-gap: 10px 8px;*/
+  
+}
+
+.item1{
+    background-color: brown !important;
+    grid-column: 1/3;
+/*    grid-row: 1;*/
+}
+
+.item4{
+    background-color: darkolivegreen !important;
+    grid-column: 1/3;
+    grid-row: 2/4; 
+    /*    2/4-> start + nr_randuri_pe_care_se_intinde - incepe de la randul no2 si se intinde pana la randul no4, pe randul 2 si 3*/
+    /*    1/3-> intindere pe 2 coloane, dar ar fi inceput de la randul no1,pana la randul no3, pe randurile 1 si 2*/
+}
+
+.item12{
+    background-color: darkslategrey !important;
+    grid-area: 4/2/7/4;
 }
 
 .grid-item {
@@ -26,4 +50,3 @@ h1 {
   font-size: 30px;
   text-align: center;
 }
-
