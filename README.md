@@ -75,3 +75,25 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 
 > **Atentie!** nu puteti folosi librarii, framework-uri [CSS](https://en.wikipedia.org/wiki/CSS_framework) sau [JavaScript](https://en.wikipedia.org/wiki/JavaScript_framework) (cum ar fi jQuery, Bootstrap, Angular, React, etc) pentru realizarea frontend-ului.
  
+### Links 
+
+* [Entity Codes](https://dev.w3.org/html5/html-author/charref)
+* [Google Fonts](https://fonts.google.com/)
+* [CSS Diner](https://flukeout.github.io/)
+* [CSS Positioning](https://www.vojtechruzicka.com/css-position/)
+* [CSS Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+* [CSS FLEXBOX tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+* [Responsive Web Design](https://web.dev/responsive-web-design-basics/)
+* [Common Flexbox Patterns - with examples](https://tobiasahlin.com/blog/common-flexbox-patterns/)
+* [Flexbox Froggy](https://flexboxfroggy.com/)
+* [FontAwesome](https://fontawesome.com/v4.7.0/get-started/) ----- [FA basic](https://www.w3schools.com/icons/fontawesome_icons_intro.asp)
+* [CSS GRID tricks](https://css-tricks.com/snippets/css/complete-guide-grid/)
+* [Common Grid Patterns - with examples](https://gridbyexample.com/examples/)
+* [Grid Garden](http://cssgridgarden.com/)
+* [Animate.CSS](https://animate.style/)
+* [JS](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+* [JS - global object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects)
+* [JS Arrays](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array)
+* [JS Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
+* [JS Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
+* [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
