@@ -76,7 +76,7 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 > **Atentie!** nu puteti folosi librarii, framework-uri [CSS](https://en.wikipedia.org/wiki/CSS_framework) sau [JavaScript](https://en.wikipedia.org/wiki/JavaScript_framework) (cum ar fi jQuery, Bootstrap, Angular, React, etc) pentru realizarea frontend-ului.
  
 ### Links 
-
+* [CodePen](https://codepen.io/trending)
 * [Entity Codes](https://dev.w3.org/html5/html-author/charref)
 * [Google Fonts](https://fonts.google.com/)
 * [CSS Diner](https://flukeout.github.io/)
