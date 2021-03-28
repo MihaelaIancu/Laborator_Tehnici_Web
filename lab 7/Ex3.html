@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head></head>
+    <body>
+            <p>
+                    1) An e-commerce website has two types of shipments: 
+                </p>
+
+                <ul>
+                    <li>Standard: 7 days</li>
+                    <li>Express: 3 days</li>
+                </ul>
+
+                
+
+                <select id="shipments">
+                    <option selected disabled value="choose">Choose the type of shipment</option>
+                    <option value="standard">Standard (7 days)</option>
+                    <option value="express">Express (3 days)</option>
+                </select>
+                <br><br>
+
+               <!--  <button id="confirm_order">Confirm</button> -->
+
+                <p>
+                    When changing the type of shipment, update the information below:
+                </p>
+
+                <div style="background-color: #f9f5c2; padding: 12px">
+                    <p>Order date: <b id="order_date"></b></p>
+                    <p>Expected date of delivery: <b id="delivery_date"></b></p>
+                    <p>Delivery Fee: <b id="delivery_fee"></b></p>
+                </div>
+
+                <small>* The date should be shown in the ISO Date format YYYY-MM-DD</small><br>
+                <small>* The fee should be retrieved from the object below and shoud be shown with 2 decimal places.</small>
+        
+<script>
+    
+    var shipments = 
+    {
+        'standard': {
+            'leadTime': 7,
+            'fee': 2
+        },
+        'express': {
+            'leadTime': 3,
+            'fee': 4.5
+        }
+    };
+        
+</script>
+        
+    </body>
+</html>
