@@ -48,6 +48,22 @@
             'fee': 4.5
         }
     };
+    
+    document.getElementById("shipments").onchange = function() {
+        
+        
+        var orderDate = new Date();
+        var selectedOption = document.getElementById("shipments").value;
+        var leadTime = shipments[selectedOption].leadTime;
+        var fee = shipments[selectedOption].fee;
+        
+        var deliveryDate = new Date(orderDate.getTime() + (leadTime * 86400000 ));
+        
+        document.getElementById("order_date").innerHTML = orderDate.toISOString().slice(0, 10);
+        document.getElementById("delivery_date").innerHTML = deliveryDate.toISOString().slice(0, 10);
+        document.getElementById("delivery_fee").innerHTML = fee.toFixed(2);
+        
+    }
         
 </script>
         
