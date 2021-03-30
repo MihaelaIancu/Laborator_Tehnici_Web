@@ -15,15 +15,18 @@ window.onload = function() {
     
     document.getElementById("ad").onclick = function() {
         var userInput = [];
-        var prompts = ["Nume", "Prenume", "CNP", "Data nasterii: MM/ZZ/YYYY"];
+        var prompts = ["Nume", "Prenume", "CNP", "Data nasterii: MM/ZZ/YYYY"];//interogarea se face pe rand, nu la fiecare apasarea a butonului
         
         for(var i = 0; i < prompts.length; i++) {
-            userInput[i] = prompt(prompts[i]);
+            userInput[i] = prompt(prompts[i]);//se retin valorile de input, date de user
         }
         
         function validareDate() {
             
-            var reDate = /(0\d{1}|1[0-2])\/([0-2]\d{1}|3[0-1])\/(19|20)\d{2}/g;
+            var reDate = /(0\d{1}|1[0-2])\/([0-2]\d{1}|3[0-1])\/(19|20)\d{2}/g; 
+         //(0\d{1}|1[0-2]) -> luna e de forma MM, in care primul M (cifra) poate incepe cu 0, urmat de al 
+         //doilea M (a doua cifra), care poate fi d{1}, adica orice cifra intre [0-9] sau pentru lunile 10, 11, 12, primul M poate incepe cu 1 si al doilea, adica a doua 
+         //cifra a lunii poate fi intre [0-2]
             
             var userDate = userInput[3];
             
@@ -37,6 +40,7 @@ window.onload = function() {
         function validareCNP() {
             
             var reCNP = /[1-2]\d{12}/g;
+         //CNP-ul incepe cu 1 sau 2 si e urmat de 12 cifre, acel {12} da numarul de cifre permise, iar acel "d" ne indica faptul ca sunt cifre
             
             var userCNP = userInput[2];
             
