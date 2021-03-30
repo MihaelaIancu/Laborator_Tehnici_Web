@@ -2,7 +2,7 @@
 //https://regexr.com/3fe3s
 //https://www.regular-expressions.info/dates.html
 
-window.onload = function() {
+window.onload = function() {//incarcarea obiectelor in pagina HTML primeaza
  
     var persoana = [
         {
@@ -59,7 +59,8 @@ window.onload = function() {
         var arrayKeys = Object.keys(persoana[0]);//array cu cheile obiectului
         var resultObj = {};
         
-        for(var j = 0; j < 4; j++) {
+        for(var j = 0; j < 4; j++) { //pentru cele 4 input-uri/campuri din obiect, iau fiecare cheie din array-ul de obiecte ( arrayKeys[] ), care devine 
+         //pentru obiectul rezultat "resultObj" noua cheie a sa si ii atribui valoarea de la utilizator, oentru acelasi index "j"
             resultObj[arrayKeys[j]] = userInput[j];
         }
         
@@ -97,14 +98,16 @@ window.onload = function() {
     
     document.getElementById("af").onclick = function() {
        
-        var text = "<ol>"
+        var text = "<ol>"//deschiderea tag-ului de lista ordonata
         
          for(var i = 0; i < persoana.length; i++) {
              
         text = text + "<li> Persoana cu numele: " + persoana[i].nume + ", prenumele: " + persoana[i].prenume + ", CNP: " + persoana[i].CNP + " si data nasterii: " + persoana[i]["data nasterii"] + " </li>";
-    }
+    //deschiderea si completarea unui list item
+         }
         
-        text = text + "</ol>";
+        text = text + "</ol>";//inchiderea listei ordonate
+     
         document.getElementById("s").innerHTML += text;//in loc de "=", pun "+=" adica voi concantena ce exista deja in elementul cu id-ul "s", cu lista care se creeaza dinamic
       //pentru a pastra si titlul "Informatii"
     }
