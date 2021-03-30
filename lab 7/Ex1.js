@@ -1,6 +1,8 @@
 //alert("yes");
 
-window.onload = function() {
+window.onload = function() {//incarcarea obiectelor in pagina HTML primeaza, in cazul in care sursa fisierului JS este in head-ul paginii (<head></head>)
+    //putem omite folosirea window.onload = function() { // cod JS } daca alegem sa punem sursa fisierului JS la sfarsitul sectiunii de body (<body></body>)
+    
     document.getElementById("p1").onmouseover = function() {
     document.getElementById("p2").style.fontFamily = "Arial, sans-serif";
  }
