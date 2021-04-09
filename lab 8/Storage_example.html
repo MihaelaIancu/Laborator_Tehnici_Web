@@ -23,7 +23,49 @@
                 <br>
             </p>
         
-        <script>
+       <script>
+        
+ //window.localStorage.setItem("name", "Mihaela");//creeaza un nou item in localStorage
+//pot omite window
+//sterge ceva din localStorage = removeItem
+//localStorage.removeItem("name");
+            
+// localStorage = user ul nu o sterge => va fi mereu acolo
+// sessionStorage = e pt sesiune, se va sterge daca inchid tab ul/browser ul => se sterge informatia
+
+//name-user
+//submit-name
+
+function greet_user() {
+    document.getElementById("name-field").style.display = "none";
+
+    document.getElementById("welcome-text").innerHTML = "Hi " + localStorage.name + ", how are you?";
+
+    document.getElementById("welcome-area").style.display = "block";
+}
+
+
+document.getElementById("submit-name").onclick = function() 
+
+{
+    var name = document.getElementById("name-user").value;
+    if(!name){
+        alert("Please type your name");
+    }
+    else{
+        localStorage.setItem("name", name);
+        greet_user();
+    }
+
+    document.getElementById("name-user").value = ""; //cleaning the field
+}
+
+
+
+// if(localStorage.name){//key EXISTA, nu daca e epmty
+//     greet_user();
+
+// }
         
         </script>
         
