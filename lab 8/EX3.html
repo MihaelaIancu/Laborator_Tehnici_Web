@@ -8,5 +8,49 @@
     
     <body>
         
+        <div id="demo"></div>
+        
+        <script>
+        var demo = document.getElementById("demo");
+
+//             function tellPos(event){ //functie pentru pozitia cursorului in pagina
+//             var x = event.clientX;
+//             var y = event.clientY; 
+//             var coor = "X coords: " + x + ", Y coords: " + y;
+        
+//             demo.innerHTML = coor;
+            
+//           }
+            
+            function getRandomColor() {
+              var letters = '0123456789ABCDEF';
+              var color = '#';
+              for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+              }
+              return color;
+                
+//                16777215 = combinatii de 16 luate cate 6
+//                var randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+//                return randomColor;
+            }
+            
+            function tellPos(event){
+               var x = event.clientX;
+               var y = event.clientY; 
+               var coor = "X coords: " + x + ", Y coords: " + y;
+                
+            var demoButton = document.createElement("button");
+            demoButton.innerHTML = coor;
+            demoButton.style['background-color'] = getRandomColor();
+                
+           document.body.append(demoButton);
+                
+    }
+            
+        window.addEventListener("click", tellPos);
+   
+        </script>
+        
     </body>
 </html>
