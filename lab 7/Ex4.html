@@ -31,6 +31,93 @@
     <br><br>
         
 <script>
+    //facem in 2 etape - rezolvam partea ce tine de ore, minute, secunde dar folosind functiile native de JS -> milisecunde si apoi formatam ce obtinem
+    //avem id-urile pentru fiecare element de buton - start, stop, reset 
+    //setam event-ul de start -> il facem sa porneasca **
+    
+    function add_leading_zero(number){
+        if(number < 10){
+            return "0" + number.toString();
+        } else {
+            return number.toString();
+        }
+    }
+
+    function add_2leading_zero(number){
+        if(number < 10){
+            return "00" + number.toString();
+        } else if(number < 100){
+            return "0" + number.toString();
+        }else {
+            return number.toString();
+        }
+    }
+
+
+    var reset = document.getElementById("reset");
+    var start = document.getElementById("start_stop");
+    var stop = document.getElementById("start_stop");
+    var isRunning = false; //cand incarcam pagina nu trebuie sa mearga
+    var startTime, currentTime, elapsedTime = 0, clockInterval, hours, minutes, seconds, remainder, formattedTime;
+    
+    document.getElementById("start_stop").onclick = function(){
+        //inainte sa intram in event-ul propriu zis trebuie sa stiu daca ceasul este pornit sau nu
+        if(!isRunning){ //punem negarea pt ca in prima faza trebuie sa il pornim, ca el e oprit intial
+            //pornesc ceasul
+            isRunning = true; //primul lucru pe care il facem e sa schimbam statusul variabilei
+            //trebuie sa luam timpul curent -> cand porneste ceasul?
+            
+            if(elapsedTime == 0){
+                startTime = new Date().getTime(); //milisec - trebuie sa actualizez timpul si am nev de un interval pe care sa il setez**
+            } else {
+                startTime = new Date().getTime() - elapsedTime;//daca are ceva salvat in elapsedTime, trebuie sa ii spunem ca vreau ca timpul de start sa fie exact de unde ne-am oprit
+            }
+            
+            //**intervalul pe care il setez, la fiecare 10 milisec vom face cv = vom lua timpul curent -> vad cat timp trece de la start pana la timpul curent = elapsedTime
+            clockInterval = window.setInterval(function(){
+
+                currentTime = new Date().getTime();
+                elapsedTime = currentTime - startTime;
+
+                //PER H = 3600000
+                //per min 60000
+                //per sec 1000
+                
+                //formatarea in ore, minute si secunde
+            hours = Math.floor(elapsedTime/3600000); //rotunjind valoarea, ne ramane un rest = reminder-ul nostru (de ex pt 3600000, daca nu ating ora pt ca opresc la 1 milisec=>3600000-1/3600000=0.999 ceva => mereu 0)
+            reminder = elapsedTime - (hours * 3600000); //in milisec
+
+            minutes = Math.floor(reminder/60000); //fac minutele din reminder-ul nostru
+            reminder -= (minutes * 60000);
+
+            seconds = Math.floor(reminder/1000);
+            reminder -= (seconds * 1000);
+
+                //initial => formattedTime = hours.toString() + ":" + minutes.toString() : seconds.toString() : reminder.toString(); => tre sa punem zero-urile sa arate mai frumos
+            formattedTime = add_leading_zero(hours) + ":" + add_leading_zero(minutes) + ":" + add_leading_zero(seconds) + " " + add_2leading_zero(reminder);
+            // var miliseconds = add_2leading_zero(currTime.getMilliseconds());
+
+            document.getElementById("stopwatch").innerHTML = formattedTime;
+            // hours + ":" + minutes + ":" + seconds + " " + miliseconds;
+            
+        }, 10);
+
+    } else {
+        //oprim ceasul
+            window.clearInterval(clockInterval);
+            isRunning = false; 
+        }
+        
+    }
+
+    document.getElementById("reset").onclick = function(){ //resetam ceasul
+        startTime = new Date().getTime(); //iau iar timpul de start si trebuie sa il fac sa porneasca de la 0, daca este oprit, ca sa nu porneasca de unde a ramas
+        if(!isRunning){
+            elapsedTime = 0;
+            document.getElementById("stopwatch").innerHTML = "00:00:00 000";
+        }
+    }
+
         
         </script>
 
