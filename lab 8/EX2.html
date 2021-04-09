@@ -7,6 +7,65 @@
     
     <body>
  
+        <div>
+            <img id="imagine" alt="imagineDeTest" src="https://images.pexels.com/photos/430207/pexels-photo-430207.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" style="position: absolute; left: 0; top:0; padding: 20px;" width=50%; onclick="readyFunction()">
+        </div>
+        
+        <script>
+            
+//sageata sus: 38; sageata jos: 40; sageata stg: 37; sageata dr: 39
+            
+//            document.onkeydown = function(event) {
+//                console.log(event.keyCode);
+//            }
+            
+            function leftArrowPressed() {
+                document.getElementById("imagine").style.left = parseInt(document.getElementById("imagine").style.left) - 10 + "px";
+            }
+            
+            function rightArrowPressed() {
+                document.getElementById("imagine").style.left = parseInt(document.getElementById("imagine").style.left) + 10 + "px";
+            }
+            
+            function upArrowPressed() {
+            var element = document.getElementById("imagine");
+            element.style.top = parseInt(element.style.top) - 10 + 'px';
+            }
+
+            function downArrowPressed() {
+            var element = document.getElementById("imagine");
+            element.style.top = parseInt(element.style.top) + 10 + 'px';
+            }
+            
+            
+                
+            function moveSelection(event) {                    
+                    switch (event.keyCode) {
+                        case 37:
+                            leftArrowPressed();
+                        break;
+
+                        case 39:
+                            rightArrowPressed();
+                        break;
+
+                        case 38:
+                            upArrowPressed();
+                        break;
+                            
+                        case 40:
+                            downArrowPressed();
+                        break;
+                    }
+                };
+                
+            function readyFunction() {
+                
+                window.addEventListener('keydown', moveSelection);
+        }   
+            
+        </script>
+        
     </body>
     
 </html>
