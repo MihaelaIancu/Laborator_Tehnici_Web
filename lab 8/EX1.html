@@ -7,6 +7,50 @@
     <body>
         
         <script>
+        
+        for(var i = 0; i < 10; i++) {
+            var div = document.createElement("div");
+            div.style.display = "inline-block";
+            div.style['padding'] = "10px";
+            div.style['margin'] = "2px";
+            div.textContent = i.toString();
+            div.style.textAlign = "center";
+            div.style['background-color'] = "lightblue";
+            div.style['border'] = "black solid 2px";
+            div.id = "id" + i;
+            document.body.append(div);
+        }
+        
+//http://keycodes.atjayjo.com/#charcode
+            
+        document.onkeydown = function(event) { //apas tasta -> background galben
+            var keyNumber = event.keyCode;
+//console.log(keyNumber);
+            for(var i = 0; i < 10; i++) {
+                
+//The charCodeAt() method returns the Unicode of the character at the specified index in a string. The index of the first character is 0, the second character 1, and so on.
+//console.log(i.toString().charCodeAt(0)); //aflam codul ASCII pentru fiecare numar
+                
+                var codAscii = i.toString().charCodeAt(0);
+                if(keyNumber == codAscii) {
+                   document.getElementById("id" + i).style['background-color'] = "yellow";
+                   }
+            }
+            
+        }
+        
+        document.onkeyup = function(event) { //las tasta -> background lightblue
+            var keyNumber = event.keyCode;
+            for(var i = 0; i < 10; i++) {
+                var codAscii = i.toString().charCodeAt(0);
+                if(keyNumber == codAscii) {
+                   document.getElementById("id" + i).style['background-color'] = "lightblue";
+                   }
+            }
+            
+        }
+        
+            
         </script>
     </body>
 </html>
