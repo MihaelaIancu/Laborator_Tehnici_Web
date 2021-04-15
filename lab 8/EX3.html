@@ -22,11 +22,12 @@
             
 //           }
             
+            //culori - rgb(x, y, z) sau #xyz sau #xXyYzZ; x/xX - pentru rosu, y/yY - verde, z/zZ - albastru
             function getRandomColor() {
               var letters = '0123456789ABCDEF';
               var color = '#';
               for (var i = 0; i < 6; i++) {
-                color += letters[Math.floor(Math.random() * 16)];
+                color += letters[Math.floor(Math.random() * 16)]; //16 = letters.lenght
               }
               return color;
                 
@@ -35,18 +36,45 @@
 //                return randomColor;
             }
             
-            function tellPos(event){
-               var x = event.clientX;
-               var y = event.clientY; 
-               var coor = "X coords: " + x + ", Y coords: " + y;
+            //functia de generare a pozitiei cursorului
+//             function tellPos(event){
+//                var x = event.clientX;
+//                var y = event.clientY; 
+//                var coor = "X coords: " + x + ", Y coords: " + y;
                 
+//             var demoButton = document.createElement("button");
+//             demoButton.innerHTML = coor;
+//             demoButton.style['background-color'] = getRandomColor();
+                
+//            document.body.append(demoButton);
+                
+//     }
+            
+        var count = 0;
+        function tellPos(event){
+
+            var x = event.clientX;
+            var y = event.clientY; 
+            var coor = "X coords: " + x + ", Y coords: " + y;
+            
             var demoButton = document.createElement("button");
-            demoButton.innerHTML = coor;
+            demoButton.id = "demo";
+            demoButton.style.position = "absolute";
+            demoButton.style.top = "0px";
+            demoButton.style.left = "0px";
+            demoButton.innerHTML = count;
+            demoButton.style.left = parseInt(demoButton.style.left) + x + "px";
+            demoButton.style.top = parseInt(demoButton.style.top) + y + "px";
             demoButton.style['background-color'] = getRandomColor();
-                
-           document.body.append(demoButton);
-                
-    }
+            
+            document.body.append(demoButton);
+            count++;
+            
+            window.setTimeout(function(){
+                demoButton.style.display = "none";
+            }, 5000)
+            
+          }
             
         window.addEventListener("click", tellPos);
    
