@@ -8,5 +8,46 @@
     
     <body>
         
+         <script>
+            
+        
+            function getRandomColor() {
+              var letters = '0123456789ABCDEF';
+              var color = '#';
+              for (var i = 0; i < 6; i++) {
+                color += letters[Math.floor(Math.random() * 16)];
+              }
+              return color;
+                
+            
+            function createDiv() {
+                var div = document.createElement("div");
+                div.style.position = "relative"
+                div.style['padding'] = "10px";
+                div.style['margin'] = "2px";
+                div.style.height = "50px";
+                div.style.width = "50px";
+                div.style.textAlign = "center";
+                div.style['background-color'] = getRandomColor();
+                div.style['border'] = "black solid 2px";
+                
+               div.style.left= Math.random() * 300 + 'px'; 
+               div.style.top = Math.random() * 300 + 'px'; 
+                
+                //SAU div.style.cssText = '..proprietati css..' dar trecem tot ce tine de css aici doar
+                
+                document.body.append(div);
+                }
+
+            window.onload = function() {
+                for(var i = 0; i < 11; i++) {
+                    createDiv();
+                    document.getElementsByTagName("div")[i].textContent = (i+1).toString();
+                }
+                
+            }
+
+        </script>
+        
     </body>
 </html>
