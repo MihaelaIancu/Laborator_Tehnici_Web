@@ -13,6 +13,71 @@ button{background-color:pink;}
 </style>
 
 <!--cod js-->
+    <script type="text/javascript">
+
+  window.onload=function (){
+
+  var data ; 
+  var  httpObj = new XMLHttpRequest();
+ 
+        httpObj.open('GET', "http://localhost:3000/test" , true);   
+        httpObj.send();
+	 
+        httpObj.onreadystatechange = function() {
+        if (httpObj.readyState == 4 && httpObj.status == 200) {
+            data = JSON.parse(httpObj.responseText); 
+//            console.log(data);
+            afiseaza(data);
+           };
+    
+     }	
+  
+    function afiseaza(data){ 
+     var l = data.length;
+     var bi = document.getElementById("b1");  
+     var br = document.getElementById("b2");  
+     var intrebare = document.getElementById("intrebare");
+     var dificultate = document.getElementById("dif");
+     var raspuns = document.getElementById("raspuns");
+     var k;
+
+     bi.onclick = function () {    
+
+     k = Math.floor(Math.random() * l);//genereaza random nr [0,..l-1]
+         
+     var dif = data[k].difficulty;     
+         console.log(dif);
+    
+         switch(dif) {
+             case 1:
+                 dificultate.innerHTML='easy';
+                 break;
+              case 2:
+                 dificultate.innerHTML='medium';
+                 break;               
+              case 3:
+                 dificultate.innerHTML='hard';
+                 break;
+                }
+
+    intrebare.innerHTML = data[k].question;  
+//    if(data[k].difficulty=='1') dificultate.innerHTML='easy';											 
+//    if(data[k].difficulty=='2') dificultate.innerHTML='medium';											 
+//    if(data[k].difficulty=='3') dificultate.innerHTML='hard';											 
+
+    raspuns.innerHTML = "";	
+    }			
+
+     br.onclick = function(){
+
+     raspuns.innerHTML = data[k].answer;
+
+        }
+
+    }
+  }
+	
+</script>
       
   </head>
   <body>
