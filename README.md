@@ -97,3 +97,8 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 * [JS Objects](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object)
 * [JS Function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function)
 * [DOM](https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction)
+* https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/Introduction
+* https://www.w3schools.com/nodejs/default.asp
+* https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
+* https://expressjs.com/en/4x/api.html#express
+* https://nodejs.org/api/querystring.html
