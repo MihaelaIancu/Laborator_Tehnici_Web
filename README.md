@@ -101,4 +101,5 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 * https://www.w3schools.com/nodejs/default.asp
 * https://www.tutorialspoint.com/nodejs/nodejs_express_framework.htm
 * https://expressjs.com/en/4x/api.html#express
+* https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/development_environment
 * https://nodejs.org/api/querystring.html
