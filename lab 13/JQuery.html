@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        
+        .normal {
+            padding: 20px;
+            font-size: 18px;
+            background-color: yellow;
+        }
+
+        .styling {
+            padding: 60px;
+            font-size: 22px;
+            font-weight: bold;
+            color: white;
+            background-color: black;
+            width: 200px;
+            border-radius: 60px;
+
+
+        }
+
+    </style>
+</head>
+    <body>
+<!--ex1-->
+        <p style="margin-bottom: 5px">Name:</p>
+        <input id="name_field" type="text" value="John Smith" style="margin: 0">
+        <br><br>
+<!--ex2-->
+        <div>
+            <select id="options">
+                <option value="opt1">Beach</option>
+                <option value="opt2">Mountain</option>
+                <option value="opt3">City</option>
+            </select>
+        </div>
+        <br>
+<!--ex3-->        
+        <div>
+
+            <span><input type="radio" name="gender" value="M" checked> Male</span><br>
+            <span><input type="radio" name="gender" value="F"> Female</span><br>
+            <span><input type="radio" name="gender" value="NONE"> Not informed</span>
+
+        </div>
+        <br>
+<!--ex4-->       
+        <div>
+
+            <span><input type="checkbox" name="interest" value="DFE"> Front-End Development</span><br>
+            <span><input type="checkbox" name="interest" value="DBE"> Back-End Development</span><br>
+            <span><input type="checkbox" name="interest" value="Design"> Web  Design</span>
+
+        </div>
+<!--ex5-->        
+        <p class="normal" id="example-paragraph">
+            This paragraph has the class "normal". Let's add the "styling" class.
+        </p>
+        <button id="add_class">Add class</button>
+        <button id="remove_class">Remove class</button>
+        <button id="toggle_class">Toggle class</button>
+        <br>
+        <br>
+<!--ex6-->
+        <p>
+            See below an input field with the Id of "fullName". Right next to it there's a hidden button with the Id of "submit".
+        </p>
+        <p>
+            Show the submit button when some text is written inside the input field. If the text is erased, the button should be hidden again.
+        </p>
+
+        <input id="fullName" type="text" placeholder="Type your name...">
+        <button style="display:none" id="submit">Submit</button>
+        <br>
+        <br>
+<!--ex7-->
+        <button id="animate">Enlarge the square</button>
+
+        <div id="square" style="color:white; font-size: 18px; margin-top: 30px; width: 60px; height: 60px; background-color: black"></div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="jquery.js"></script>
+        
+    </body>
+</html>
