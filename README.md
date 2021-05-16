@@ -105,3 +105,4 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
 * https://nodejs.org/api/querystring.html
 * https://nodemailer.com/about/
 * https://www.w3schools.com/nodejs/nodejs_email.asp
+* [BOOTSTRAP](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
