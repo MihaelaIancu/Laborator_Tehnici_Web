@@ -25,8 +25,6 @@ Punctajul maxim care poate fi obtinut in cadrul laboratorului este de 40 puncte:
   * Responsive Web Design Certification (4 puncte - deadline: saptamana 7)
   * JavaScript Algorithms and Data Structures Certification (4 puncte - deadline: saptamana 14)
  
-###### Va rog sa retineti ca este necesar ca dupa ce va faceti cont pe Free Code Camp sa va asigurati din setari ca profilul si numarul de puncte sunt PUBLICE, astfel pentru notare, este nevoie doar sa imi trimiteti link-ul profilului. Voi reveni asupra trimiterea progresului vostru pe Free Code Camp, pentru a o simplifica.
-
 #### Proiect (30 puncte)
 
 * partea de HTML + CSS + responsive:  10 puncte
